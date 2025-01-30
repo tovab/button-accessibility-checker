@@ -1,0 +1,14 @@
+{
+    "name": "Accessibility Chrome Extension",
+    "description": "Detect cases where interactive properties are present on elements that are not keyboard accessible.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+    }]
+}
